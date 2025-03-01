@@ -165,7 +165,7 @@ return (
 
     {/* Footer */}
     <div className={`mt-4 text-center text-sm ${darkMode ? 'text-gray-400' : 'text-gray-500'}`}>
-      <p>© {new Date().getFullYear()} Weight Loss Calculator | Created with ❤️</p>
+      <p>© {new Date().getFullYear()} Weight Loss Calculator | Roi Alfassi</p>
     </div>
   </div>
 );

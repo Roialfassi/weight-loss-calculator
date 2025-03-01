@@ -42,12 +42,12 @@ const showWarning = hasCalculated && activeTab === 'timeframe' && (weightToLose 
   
 return (
   <div className={`rounded-2xl p-6 shadow-lg transition-all duration-500 ${isAnimating ? 'opacity-50 scale-95' : 'opacity-100 hover:translate-y-1'} ${darkMode ? 'bg-gray-800 text-white' : 'bg-white'}`}>
-    <h1 className={`text-2xl font-bold text-center mb-6 ${darkMode ? 'text-indigo-400' : 'text-indigo-600'}`}>Your Results</h1>
+    <h1 className={`text-2xl font-bold text-center mb-6 ${darkMode ? 'text-cyan-400' : 'text-orange-600'}`}>Your Results</h1>
     
     {hasCalculated ? (
       <>
         {/* BMI Section */}
-        <div className={`mb-4 p-4 rounded-lg border-l-4 ${darkMode ? 'bg-gray-700 border-indigo-400' : 'bg-indigo-50 border-indigo-500'}`}>
+        <div className={`mb-4 p-4 rounded-lg border-l-4 ${darkMode ? 'bg-gray-700 border-cyan-400' : 'bg-cyan-50 border-cyan-500'}`}>
           <div className="flex justify-between items-center">
             <div>
               <p className={`font-medium ${darkMode ? 'text-gray-300' : 'text-gray-700'}`}>Current BMI</p>
@@ -62,9 +62,9 @@ return (
           </div>
         </div>
         
-        <div className={`mb-4 p-4 rounded-lg border-l-4 ${darkMode ? 'bg-gray-700 border-indigo-400' : 'bg-gray-50 border-indigo-500'}`}>
+        <div className={`mb-4 p-4 rounded-lg border-l-4 ${darkMode ? 'bg-gray-700 border-cyan-400' : 'bg-gray-50 border-cyan-500'}`}>
           <p className={`font-medium ${darkMode ? 'text-gray-300' : 'text-gray-700'}`}>Weight to Lose</p>
-          <p className={`text-2xl font-bold ${darkMode ? 'text-indigo-400' : 'text-indigo-600'}`}>{weightToLose.toFixed(1)} kg</p>
+          <p className={`text-2xl font-bold ${darkMode ? 'text-cyan-400' : 'text-cyan-600'}`}>{weightToLose.toFixed(1)} kg</p>
           <p className={`text-sm ${darkMode ? 'text-gray-400' : 'text-gray-500'} mt-1`}>{(weightToLose * 2.2).toFixed(1)} lbs</p>
         </div>
         

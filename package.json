@@ -1,6 +1,6 @@
 {
   "name": "weight-loss-calculator",
-  "homepage": "https://roialfassi.github.io/weight-loss-calculator/",
+  "homepage": "/weight-loss-calculator/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

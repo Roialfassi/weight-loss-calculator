@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/weight-loss-calculator/static/css/main.9b0a47c3.css",
-    "main.js": "/weight-loss-calculator/static/js/main.a0af81ab.js",
+    "main.js": "/weight-loss-calculator/static/js/main.d7d04a1e.js",
     "index.html": "/weight-loss-calculator/index.html",
     "main.9b0a47c3.css.map": "/weight-loss-calculator/static/css/main.9b0a47c3.css.map",
-    "main.a0af81ab.js.map": "/weight-loss-calculator/static/js/main.a0af81ab.js.map"
+    "main.d7d04a1e.js.map": "/weight-loss-calculator/static/js/main.d7d04a1e.js.map"
   },
   "entrypoints": [
     "static/css/main.9b0a47c3.css",
-    "static/js/main.a0af81ab.js"
+    "static/js/main.d7d04a1e.js"
   ]
 }

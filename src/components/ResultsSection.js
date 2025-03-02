@@ -141,7 +141,7 @@ return (
           <p className={`text-2xl font-bold ${darkMode ? 'text-teal-400' : 'text-teal-600'}`}>{walkingDistance.toFixed(1)} km</p>
           <p className={`text-sm ${darkMode ? 'text-gray-400' : 'text-gray-500'} mt-1`}>
             Based on your weight of {currentWeight}kg 
-            ({Math.round(parseFloat(currentWeight) * 0.7)} calories per km walked)
+            ({Math.round((parseFloat(currentWeight) + parseFloat(currentWeight - weightToLose)) * 0.5)} calories per km walked)
           </p>
         </div>
         

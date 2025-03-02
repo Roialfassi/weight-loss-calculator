@@ -62,8 +62,8 @@ const WeightLossCalculator = () => {
   };
   
   // Calories burned per km (varies by weight, using average)
-  const getCaloriesPerKm = (weight) => {
-    return Math.round(weight * 0.7);
+  const getCaloriesPerKm = (weight , targetWeight) => {
+    return Math.round((weight + targetWeight) * 0.5);
   };
   
   // Form validation for timeframe tab
@@ -175,7 +175,7 @@ const WeightLossCalculator = () => {
     setWeeklyCalorieDeficit(totalCalories / weeks);
     setMonthlyCalorieDeficit(totalCalories / (weeks / 4.35));
     
-    const caloriesPerKm = getCaloriesPerKm(currentW);
+    const caloriesPerKm = getCaloriesPerKm(currentW , targetW);
     const totalDistanceKm = totalCalories / caloriesPerKm;
     const dailyDistanceKm = totalDistanceKm / (weeks * 7);
     
@@ -223,7 +223,7 @@ const WeightLossCalculator = () => {
     setWeightToLose(weightDiff);
     
     const totalCalories = weightDiff * 7700;
-    const caloriesPerKm = getCaloriesPerKm(currentW);
+    const caloriesPerKm = getCaloriesPerKm(currentW, targetW);
     
     const dailyCaloriesBurned = walking * caloriesPerKm;
     const daysToGoal = totalCalories / dailyCaloriesBurned;
